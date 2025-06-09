@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JWcashnest Bank - Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .bank-name {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      width: 300px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #e6c200;
+    }
+
+    .ads {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #ccc;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo">JW</div>
+    <div class="bank-name">JWcashnest BANK</div>
+
+    <div class="form-box">
+      <form id="loginForm">
+        <input type="text" id="userid" placeholder="User ID" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="ads">Secure Banking | Trusted by Millions | 24x7 Support</div>
+  </div>
+
+  <div class="footer">© 2025 JWcashnest Bank. All rights reserved.</div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const uid = document.getElementById("userid").value;
+      const pass = document.getElementById("password").value;
+
+      if (uid === "Sukhdev0505" && pass === "1000554845x") {
+        window.location.href = "home.html";
+      } else {
+        alert("Invalid User ID or Password");
+      }
+    });
+  </script>
+</body>
+</html>
